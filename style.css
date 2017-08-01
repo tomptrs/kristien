@@ -1,0 +1,212 @@
+@font-face {
+    font-family: ADLIB;
+    src: url(ADLIB.TTF);
+}
+
+body{
+  /*  background: url(background.PNG);*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: ADLIB;
+}
+.bar{
+    background: url(background.PNG);*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 30px;
+}
+
+header{
+    background: white;
+    margin-bottom: 3%;
+}
+header ul{
+    list-style-type: none;
+}
+/*header ul li{
+    float:left;
+    margin-left:5%;
+}*/
+
+header ul.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+header ul li{
+    margin-left:3%;
+}
+header ul {
+    border-bottom: 1px solid grey;
+    padding-bottom:1%;
+}
+
+header h1{
+    
+    text-align: center;
+    font-size: 2.2em;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+header ul li a:hover{
+    text-decoration: none;
+    color:black;
+    border-bottom: 3px solid darkorange;
+}
+
+header ul li a.active{
+    color:darkorange;
+}
+
+
+main{
+    clear: both;
+    background: white;
+    
+}
+
+
+
+main p {
+    width: 70%;
+    margin:auto;
+    text-align:center;
+    margin-bottom: 2%;
+}
+
+main div, main ul, main form {
+    width: 70%;
+    margin:auto;
+   
+    margin-bottom: 2%;
+}
+
+
+
+main.over p{
+    text-align: left;
+}
+
+
+.kader1, .kader2, .kader3, .kader4, .kader5 {
+  width: 60px;
+  height: 45px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 10px;
+}
+
+.kader1 {
+  background-color: #69C0B8;
+  position: relative;
+  top: 20px;}
+
+.kader2 {
+  background-color: #E6344C;
+  position: relative;
+  left: 70px;
+  z-index: 10;}
+
+.kader3 {
+  background-color: #986399;
+  position: relative;
+  left: 300px;
+  bottom: 350px;}
+
+.kader4 {
+  background-color: yellow;
+  position: relative;
+  bottom: 250px;}
+
+.kader5 {
+  background-color: #003E79;
+  position: relative;
+  bottom: 450px;
+  left: 300px;}
+
+
+/*
+FORM
+*/
+
+
+
+
+label {
+    font-family: helvetica;
+    margin: 10px 0;
+    display: block;
+  
+    font-size: 1.2em;
+    
+}
+
+input[type="text"], input[type="email"], input[type="password"] , textarea  {
+    font-family: helvetica;
+    font-size: 1.2em;
+    width: 242px;
+    color: #333;
+    padding: 5px;
+    padding-left: 5px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+input[type="submit"]  {
+    font-family: helvetica;
+    font-size: 1.1em;
+    width: 260px;
+    background-color: #2B2623;
+    padding: 8px 5px;
+    margin: 20px 0 0 0;
+    display: block;
+    border-radius: 6px;
+    color: white;
+}
+
+select {
+    width: 257px;
+    /* de background zetten is essentieel om vat te krijgen     op de styling van een select! */ 
+    background: white;
+    font-size: 1.2em;
+    color: #333;
+    height: 35px;   
+    background-color: rgba(255,255,255,0.7);
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+  @media(max-width:500px){
+             header ul.flex-container {
+                 width: 100%;
+                flex-direction:column;
+                 justify-content: center;
+                 margin-left:20%;
+                         
+      }
+      
+      header ul li{
+          margin-bottom: 2%;
+      }
+
+}
+
+
